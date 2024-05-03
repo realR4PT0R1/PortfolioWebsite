@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import blackbird from "/public/bluebird musta.png";
+import vento from "/public/vento1.png";
+import katiskaproto from "/public/katiskaproto.png";
+import katiskajulkaisu from "/public/katiskajulkaisu.png";
+import volvocityl from "/public/volvocityl.png";
+import comet from "/public/comet.png";
+import vento2 from "/public/vento2.png";
+---
+
+<Layout>
+  <div class="container my-4">
+    <h1 data-aos="fade-down" class="text-center gradient-title">Blogi</h1>
+    <hr class="otsikkohr" />
+    <div class="row my-5">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
+        <hr class="keltanenhr" />
+        <h1 class="vento">
+          Volkswagen Vento <span class="red"> VR6 </span> (1993)
+        </h1>
+        <h5>Vento projektia edistetty 30.4.2024</h5>
+        <p class="text-underline">1.5.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={vento2} alt="Vento" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={vento} alt="Vento" />
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="500">
+        <h5>Vento projekti Blenderissä aloitettu 29.4.2024</h5>
+        <p class="text-underline">30.4.2024</p>
+      </div>
+      
+    </div>
+    <hr class="keltanenhr" />
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+        <h1 class="bluebird">Nissan Bluebird 1.6 SLX (1991)</h1>
+        <h5>Auto tuotu Unityyn Blenderistä 29.4.2024</h5>
+        <p class="text-underline">29.4.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="500">
+        <Image class="img-fluid rounded" src={blackbird} alt="Bluebird T12" />
+      </div>
+    </div>
+    <hr class="keltanenhr" />
+
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+        <h1>Ravintola Katiska Julkaisu</h1>
+        <p class="text-underline">24.4.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image
+          class="img-fluid rounded"
+          src={katiskajulkaisu}
+          alt="Bluebird T12"
+        />
+      </div>
+    </div>
+
+    <hr class="keltanenhr" />
+
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
+        <h1>Ravintola Katiska Prototyyppi</h1>
+        <p class="text-underline">20.3.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image
+          class="img-fluid rounded"
+          src={katiskaproto}
+          alt="Bluebird T12"
+        />
+      </div>
+    </div>
+
+    <hr class="keltanenhr" />
+
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
+        <h1>Volvo City L (2004)</h1>
+        <h5>Projekti Blenderissä</h5>
+        <p class="text-underline">3.9.2023</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={volvocityl} alt="Bluebird T12" />
+      </div>
+    </div>
+    <hr class="keltanenhr" />
+
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
+        <h1>Mercury Comet (1964)</h1>
+        <h5>Projekti Blenderissä</h5>
+
+        <p class="text-underline">15.5.2023</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={comet} alt="Bluebird T12" />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  p {
+    color: #fff;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  .vento {
+    font-family: Wolfsburg-Regular;
+  }
+
+  .bluebird {
+    font-family: Nissan;
+  }
+</style>

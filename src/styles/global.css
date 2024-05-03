@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "SF";
+  src: url(../../SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Wolfsburg-Regular';
+  src:url('../../Wolfsburg-Regular.otf'),
+}
+
+@font-face {
+  font-family: 'Nissan';
+  src:url('../../NissanOpti-Italic.otf'),
+}
+
+.red{
+  color: red;
+}
+
+.otsikkohr{
+  background-color: #191919;
+    text-align:center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, #d8d000, #ff0080);
+    border-image-slice: 1;
+    width:25%;
+    margin: auto;
+}
+
+.img-cover {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.front-img-cover{
+  border-radius: 10px;
+}
+
+.gradient-title {
+  font-family: SF;
+  font-weight: 700;
+  background: #ff0080;
+  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  color: #fff;
+  font-family: SF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+p {
+  font-family: SF;
+}
+
+h1 {
+  color: #fff;
+  font-family: SF;
+  font-weight: 100;
+
+}
+
+h2 {
+  color: #fff;
+  font-family: SF;
+}
+
+h3 {
+  color: #fff;
+  font-family: SF;
+}
+
+h4 {
+  color: #fff;
+  font-family: SF;
+}
+
+h5 {
+  color: #fff;
+  font-family: SF;
+}
+
+Img{
+  margin: 5px;
+}
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.keltanenhr {
+  font-family: SF;
+    background-color: #191919;
+    text-align:center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, #d8d000, #ff0080, rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+}
+
+.keltanenhr2 {
+  width: 300px;
+  border-top: 3px solid #ff0080;
+
+  margin: 0 42.4%;
+}
+
+.front-img-cover {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

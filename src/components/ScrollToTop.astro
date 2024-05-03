@@ -1,0 +1,54 @@
+---
+
+---
+
+<a onclick="scrollToTop()" id="toTopBtn" class="cd-top d-none" data-abc="true"
+></a>
+
+<script is:inline>
+  function scrollToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+  let mybutton = document.getElementById("toTopBtn");
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 250 ||
+      document.documentElement.scrollTop > 250
+    ) {
+      mybutton.classList.remove("d-none");
+    } else {
+      mybutton.classList.add("d-none");
+    }
+  }
+</script>
+
+<style>
+  #toTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 98;
+    padding: 21px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 10px rgba(173, 21, 21, 0.05) !important;
+    background: url("../public/cd-top-arrow.svg") no-repeat center;
+    background-color: #d8d00085;
+    border-radius: 0.3rem;
+  }
+
+  #toTopBtn:hover {
+    cursor: pointer;
+    background-color: #d8d0009f;
+    transform: translateY(-1px);
+  }
+</style>

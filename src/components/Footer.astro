@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import laemkri from "/public/Laemkri.png";
+import linkedin from "/public/Linkedin.png";
+import facebook from "/public/Facebook.png";
+import instagram from "/public/Instagram.png";
+---
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3 text-center">
+        <div class="col-md-3 mx-auto">
+          <Image src={laemkri} alt="logo" class="footer-logo" />
+          <hr />
+          <a href="/projektit">Projektit 🡶 </a>
+          <br />
+          <a href="/blogi">Blogit 🡶 </a>
+          <br />
+          <a href="/kokemus">Kokemus 🡶 </a>
+        </div>
+        <div class="col-md-3 mx-auto mb-md-0 mb-4">
+          <p class="text-uppercase fw-bold my-4 footer-otsikko">Somet</p>
+          <hr />
+          <a href="https://www.instagram.com/mankilauri/" class="mx-1">
+            <Image src={instagram} alt="logo" class="instagram" />
+          </a>
+          <a href="https:/www.facebook.com" class="mx-2">
+            <Image src={facebook} alt="logo" class="facebook" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lauri-raitio-8827b5291/"
+            class="mx-1"
+          >
+            <Image src={linkedin} alt="linkedin" class="linkedin" />
+          </a>
+        </div>
+      </div>
+      <div class="my-5"></div>
+    </div>
+    <p class="bottom">Copyright &copy; Laemkri 2024</p>
+  </section>
+
+  <style>
+    .footer-logo {
+      height: 30px;
+      width: 170px;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    .bottom {
+      background-color: #161616;
+      margin: 0px;
+      padding: 10px;
+      font-family: SF;
+      text-align: center;
+    }
+    .footer-otsikko {
+      color: #d8d000;
+      text-align: center;
+    }
+    footer {
+      position: relative;
+    }
+    section {
+      font-family: SF;
+      background-color: #1c1c1c;
+      text-align: center;
+      border-top: 2px solid transparent;
+      border-image: linear-gradient(
+        0.25turn,
+        #d8d000,
+        #ff0080,
+        rgba(56, 2, 155, 0)
+      );
+      border-image-slice: 1;
+      width: 100%;
+    }
+    .container {
+      background-color: #1c1c1c;
+    }
+    .text-center {
+      font-family: "Latol", sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+    }
+
+    .facebook {
+      width: 32px;
+      height: 32px;
+    }
+
+    .linkedin {
+      width: 35px;
+      height: 35px;
+    }
+
+    .instagram {
+      width: 32px;
+      height: 32px;
+    }
+
+    p {
+      font-family: "Latol", sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+    }
+
+    a {
+      font-size: 18px;
+    }
+
+    a:hover {
+      text-shadow: 1px 1px 3px #d8d000;
+      transition: 0.5s;
+    }
+  </style>
+</footer>

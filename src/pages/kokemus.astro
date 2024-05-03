@@ -1,0 +1,345 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout>
+  <title>Etusivu | Ravintola Katiska</title>
+  <div class="my-4"></div>
+  <div class="container">
+    <h1 data-aos="fade-down" class="text-center gradient-title">Kokemus</h1>
+    <hr class="otsikkohr" />
+    <div class="my-5"></div>
+    <div class="right">
+      <div class="line_content">
+        <div class="line flex1">
+          <p class="uni">UNITY</p>
+          <div class="bar">
+            <div class="line_bar un"></div>
+          </div>
+          <h5>90</h5>
+        </div>
+
+        <div class="line flex1">
+          <p class="ps">ADOBE PHOTOSHOP</p>
+          <div class="bar">
+            <div class="line_bar ps"></div>
+          </div>
+          <h5>85</h5>
+        </div>
+
+        <div class="line flex1">
+          <p class="bl">Blender</p>
+          <div class="bar">
+            <div class="line_bar blender"></div>
+          </div>
+          <h5>85</h5>
+        </div>
+
+        <div class="line flex1">
+          <p class="axd">ADOBE XD</p>
+          <div class="bar">
+            <div class="line_bar xd"></div>
+          </div>
+          <h5>80</h5>
+        </div>
+
+        <div class="line">
+          <p class="aai">ADOBE ILLUSTRATOR</p>
+          <div class="bar">
+            <div class="line_bar ai"></div>
+          </div>
+          <h5>75</h5>
+        </div>
+
+        <div class="line">
+          <p class="aid">ADOBE InDesign</p>
+          <div class="bar">
+            <div class="line_bar id"></div>
+          </div>
+          <h5>60</h5>
+        </div>
+
+        <div class="line">
+          <p class="html">HTML/CSS</p>
+          <div class="bar">
+            <div class="line_bar htcs"></div>
+          </div>
+          <h5>60</h5>
+        </div>
+
+        <div class="line">
+          <p class="aae">ADOBE After Effects</p>
+          <div class="bar">
+            <div class="line_bar ae"></div>
+          </div>
+          <h5>55</h5>
+        </div>
+
+        <div class="line">
+          <p class="apr">ADOBE Premiere</p>
+          <div class="bar">
+            <div class="line_bar pr"></div>
+          </div>
+          <h5>50</h5>
+        </div>
+
+        <div class="line">
+          <p class="ast">ASTRO</p>
+          <div class="bar">
+            <div class="line_bar as"></div>
+          </div>
+          <h5>50</h5>
+        </div>
+      </div>
+    </div>
+
+    <p class="my-5"></p>
+    <h1 class="text-center gradient-title">Opinnot / Kurssit</h1>
+    <hr class="keltanenhr" />
+    <div class="row">
+      <div data-aos="fade" class="col-12">
+        <p class="opintootsikko">
+          Turun Ammatti-instituutti - Ohjelmistokehittäjä
+        </p>
+        <h5>Turku: 11.8.2022-31.5.2025</h5>
+        <p class="mb-4"></p>
+      </div>
+      <div data-aos="fade" class="col-12">
+        <p class="opintootsikko">
+          Turun Ammatti-instituutti - Kyberturvallisuuskurssi
+        </p>
+        <h5>Turku: 9.1.2022-15.3.2024</h5>
+        <p class="mb-4"></p>
+      </div>
+      <div data-aos="fade" class="col-12">
+        <p class="opintootsikko">Turun Ammatti-instituutti - Ensiapukurssi</p>
+        <h5>Turku: 11.9.2023</h5>
+        <p class="mb-4"></p>
+      </div>
+    </div>
+    <p class="my-5"></p>
+  </div>
+
+  <style>
+    .line_content .line {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .line_content p {
+      text-transform: uppercase;
+      width: 35%;
+    }
+
+    .line_content h5 {
+      background: #d8d8d8;
+      width: 50px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 12px;
+      color: #202020;
+    }
+
+    .line_content h5::after {
+      position: absolute;
+      content: "";
+      left: -5.3px;
+      top: 14px;
+      width: 10px;
+      height: 10px;
+      background: #d8d8d8;
+      transform: rotate(45deg);
+    }
+
+    .line_content .line:nth-child(2) h5::after,
+    .line_content .line:nth-child(2) h5 {
+      background: #00a9cb;
+    }
+
+    .line_content .line:nth-child(3) h5::after,
+    .line_content .line:nth-child(3) h5 {
+      background: #cb5f00;
+    }
+
+    .line_content .line:nth-child(4) h5::after,
+    .line_content .line:nth-child(4) h5 {
+      background: #ff26be;
+    }
+
+    .line_content .line:nth-child(5) h5::after,
+    .line_content .line:nth-child(5) h5 {
+      background: #ff761b;
+    }
+
+    .line_content .line:nth-child(6) h5::after,
+    .line_content .line:nth-child(6) h5 {
+      background: #ff1b45;
+    }
+
+    .line_content .line:nth-child(7) h5::after,
+    .line_content .line:nth-child(7) h5 {
+      background: #ff3300;
+    }
+
+    .line_content .line:nth-child(8) h5::after,
+    .line_content .line:nth-child(8) h5 {
+      background: #5100ae;
+    }
+
+    .line_content .line:nth-child(9) h5::after,
+    .line_content .line:nth-child(9) h5 {
+      background: #8400cb;
+    }
+
+    .line_content .line:nth-child(10) h5::after,
+    .line_content .line:nth-child(10) h5 {
+      background: #ff3269;
+    }
+
+    .line_content .bar {
+      width: 100%;
+      background: #242424;
+      height: 5px;
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+
+    .line_content .line_bar {
+      animation: bar 2s;
+      height: 5px;
+      background: linear-gradient(to right, #202020 0%, #00a9cb 100%);
+      width: 85%;
+    }
+
+    .line_content .un {
+      width: 90%;
+      background: linear-gradient(to right, #202020 0%, #d8d8d8 100%);
+    }
+
+    .line_content .blender {
+      width: 85%;
+      background: linear-gradient(to right, #202020 0%, #cb5f00 100%);
+    }
+
+    .line_content .xd {
+      width: 80%;
+      background: linear-gradient(to right, #202020 0%, #ff26be 100%);
+    }
+
+    .line_content .ai {
+      width: 75%;
+      background: linear-gradient(to right, #202020 0%, #ff761b 100%);
+    }
+
+    .line_content .id {
+      width: 60%;
+      background: linear-gradient(to right, #202020 0%, #ff1b45 100%);
+    }
+
+    .line_content .htcs {
+      width: 60%;
+      background: linear-gradient(to right, #202020 0%, #ff3300, #1b2eff 100%);
+    }
+
+    .line_content .ae {
+      width: 55%;
+      background: linear-gradient(to right, #202020 0%, #5100ae 100%);
+    }
+
+    .line_content .pr {
+      width: 50%;
+      background: linear-gradient(to right, #202020 0%, #8400cb 100%);
+    }
+
+    .line_content .as {
+      width: 50%;
+      background: linear-gradient(to right, #202020 0%, #ff3269, #ff6200 100%);
+    }
+
+    @keyframes bar {
+      0% {
+        width: 0%;
+      }
+    }
+
+    a {
+      color: #d8d000;
+      text-decoration: none;
+      font-family: SF;
+    }
+
+    a:hover {
+      color: #d8d000;
+    }
+
+    a:active {
+      color: #d8d000;
+    }
+    p {
+      color: aliceblue;
+      font-family: SF;
+      margin-top: 20px;
+    }
+    .opintootsikko {
+      font-family: SF;
+      font-weight: 100;
+      font-size: 26px;
+      background: #ff0080;
+      background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card {
+      background-color: rgba(173, 39, 39, 0);
+      border: none;
+    }
+
+    .uni{
+      color: #d8d8d8;
+    }
+
+    .ps {
+      color: #00a9cb;
+    }
+
+    .bl {
+      color: #cb5f00;
+    }
+
+    .axd {
+      color: #ff26be;
+    }
+
+    .aai {
+      color: #ff761b;
+    }
+
+    .aid {
+      color: #ff1b45;
+    }
+
+    .html {
+      background: -webkit-linear-gradient(#ff3300, #1b2eff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .aae {
+      color: #5100ae;
+    }
+
+    .apr {
+      color: #8400cb;
+    }
+
+    .ast {
+      background: -webkit-linear-gradient(#ff00d0, #ff6200);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</Layout>
