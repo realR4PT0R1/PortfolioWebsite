@@ -21,9 +21,12 @@ import katiskamac from "/public/katiskamac.png";
           keskeneräisiä projekteja.
         </h5>
         <p class="mb-4"></p>
-        <button onclick="document.location='/projektit/'" class="nappula">Projektit</button>
-        <button onclick="document.location='/blogi/'" class="nappula-rl my-2">blogi</button>
-
+        <button onclick="document.location='/projektit/'" class="nappula"
+          >Projektit</button
+        >
+        <button onclick="document.location='/blogi/'" class="nappula-rl my-2"
+          >blogi</button
+        >
       </div>
       <div class="col-md-6" data-aos="fade">
         <Image src={Camaro30123} alt="camaro" class="front-img-cover" />
@@ -42,7 +45,9 @@ import katiskamac from "/public/katiskamac.png";
         <p class="my-4"></p>
         <h5>Voit tutustua Nettisivuihini Projekteista</h5>
         <p class="mb-4"></p>
-        <button onclick="document.location='/projektit'" class="nappula">Nettisivut</button>
+        <button onclick="document.location='/projektit'" class="nappula"
+          >Nettisivut</button
+        >
       </div>
       <p class="my-5"></p>
     </div>
@@ -59,7 +64,9 @@ import katiskamac from "/public/katiskamac.png";
           kuvamateriaaliin Galleria-sivulta
         </h5>
         <p class="mb-4"></p>
-        <button onclick="document.location='/galleria'" class="nappula">Galleria</button>
+        <button onclick="document.location='/galleria'" class="nappula"
+          >Galleria</button
+        >
       </div>
       <div data-aos="fade" class="col-md-6 camarokuva">
         <Image src={bmw} width={600} alt="kuvia" class="front-img-cover" />
@@ -74,70 +81,71 @@ import katiskamac from "/public/katiskamac.png";
     height: 80px;
   }
 
-  .nappula-rl {
-    color: #ff9900;
-    font-family: SF;
+  /* .nappula-rl {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 0.3em;
-    border-radius: 6px;
-    border: solid;
-    border-color: #ff9900;
     padding: 12.5px 40px 12.5px;
     transition: all 0.5s ease-out;
-    background-color: #202020;
     background-size: 300%;
+    background:
+      linear-gradient(#202020, #202020) padding-box,
+      linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    display: inline-block;
+    font-family: SF;
+    border: 3px solid transparent;
+
+  } */
+
+  .nappula-rl {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    padding: 12.5px 40px 12.5px;
+    transition: all 0.5s ease-out;
+    background-size: 300%;
+    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    border-color: #ff990000;
+    color: #000000;
+    display: inline-block;
+    font-family: SF;
+    border-radius: 6px;
+    border: 3px solid transparent;
+
+
   }
 
   .nappula-rl:hover {
-    background-color: #ff9900;
-    border-color: #ff9900;
-    color: #202020;
+    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    border-color: #ff990000;
+    color: #000000;
   }
 
   .nappula {
-    color: black;
-    font-family: SF;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 0.3em;
-    border-radius: 6px;
-    border: solid;
     padding: 12.5px 40px 12.5px;
     transition: all 0.5s ease-out;
-    background-color: #ff9900;
     background-size: 300%;
-    border-color: #ff9900;
+    background:
+      linear-gradient(#202020, #202020) padding-box,
+      linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    display: inline-block;
+    font-family: SF;
   }
 
   .nappula:hover {
-    background-color: #202020;
-    border-color: #ff9900;
-    color: #ff9900
+    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    border-color: #ff990000;
+    color: #000000;
   }
-
- 
-  /* .nappula {
-  color: #fff;
-  font-family: SF;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 0.3em;
-  border-radius: 6px;
-  border: solid;
-  padding: 12.5px 40px 12.5px;
-  transition: all 1s ease-out;
-  border-color: #595959;
-  background: linear-gradient(to left, #ff0080 0%, #d8b400 51%, #ff0080 100%);
-  background-size: 300%;
-  background-position: 0% 0%;
-}
-
-.nappula:hover {
-  background-position: -100% 0%; /* Muutetaan taustapositiota hover-tilassa */
-  border-color: #ff0084;
-  color: #ffffff;
-} */
 
   .info {
     width: 90px;
