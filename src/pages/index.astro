@@ -6,7 +6,7 @@ import bmw from "/public/bmw.png";
 import katiskamac from "/public/katiskamac.png";
 ---
 
-<Layout>
+<Layout pageTitle="Laemkri">
   <br />
   <div class="container">
     <p class="my-5"></p>
@@ -28,8 +28,8 @@ import katiskamac from "/public/katiskamac.png";
           >blogi</button
         >
       </div>
-      <div class="col-md-6" data-aos="fade">
-        <Image src={Camaro30123} alt="camaro" class="front-img-cover" />
+      <div class="col-md-6 kuvaa" data-aos="fade">
+        <Image class="camaro1 front-img-cover" src={Camaro30123} alt="camaro" decoding="sync" />
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ import katiskamac from "/public/katiskamac.png";
         <p class="my-4"></p>
         <h5>Voit tutustua Nettisivuihini Projekteista</h5>
         <p class="mb-4"></p>
-        <button onclick="document.location='/projektit'" class="nappula"
+        <button onclick="document.location='/projektit'" class="nappula "
           >Nettisivut</button
         >
       </div>
@@ -77,63 +77,92 @@ import katiskamac from "/public/katiskamac.png";
 </Layout>
 
 <style>
+  /* @property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotation{
+    0% {--gradient-angle: 0deg; }
+    100% {--gradient-angle: 360deg; }
+
+  }
+
+  :root{
+    --clr-1: #ff0080;
+    --clr-2: #ff6a3d;
+    --clr-3: #ff8c6a;
+    --clr-4: #fbb05f;
+    --clr-5: #d8d000;
+  }
+
+  .camaro1{
+    padding-left: 0%;
+    margin: none;
+  }
+
+  .kuvaa{
+    z-index: -1;
+    position: relative;
+  }
+
+  .kuvaa::before,
+  .kuvaa::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3),
+      var(--clr-2),
+      var(--clr-1));
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(3rem);
+    animation: rotation 10s linear infinite;
+  } */
+
   .space {
     height: 80px;
   }
 
-  /* .nappula-rl {
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    padding: 12.5px 40px 12.5px;
-    transition: all 0.5s ease-out;
-    background-size: 300%;
-    background:
-      linear-gradient(#202020, #202020) padding-box,
-      linear-gradient(60deg, #d8d000, #ff0080) border-box;
-    color: #ffffff;
-    border-radius: 6px;
-    border: 3px solid transparent;
-    display: inline-block;
-    font-family: SF;
-    border: 3px solid transparent;
-
-  } */
-
   .nappula-rl {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.3em;
     padding: 12.5px 40px 12.5px;
     transition: all 0.5s ease-out;
     background-size: 300%;
-    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    background: linear-gradient( #d8d000, #ff0080) border-box;
     border-color: #ff990000;
     color: #000000;
     display: inline-block;
     font-family: SF;
     border-radius: 6px;
     border: 3px solid transparent;
-
-
   }
 
   .nappula-rl:hover {
-    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    background: linear-gradient(#3d3d3d, #202020) padding-box, linear-gradient( #d8d000, #ff0080) border-box;
     border-color: #ff990000;
-    color: #000000;
+    color: #ffffff;
   }
 
   .nappula {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.3em;
     padding: 12.5px 40px 12.5px;
     transition: all 0.5s ease-out;
     background-size: 300%;
-    background:
-      linear-gradient(#202020, #202020) padding-box,
-      linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    background: linear-gradient(#3d3d3d, #202020) padding-box, linear-gradient( #d8d000, #ff0080) border-box;
     color: #ffffff;
     border-radius: 6px;
     border: 3px solid transparent;
@@ -142,7 +171,7 @@ import katiskamac from "/public/katiskamac.png";
   }
 
   .nappula:hover {
-    background: linear-gradient(60deg, #d8d000, #ff0080) border-box;
+    background: linear-gradient( #d8d000, #ff0080) border-box;
     border-color: #ff990000;
     color: #000000;
   }
