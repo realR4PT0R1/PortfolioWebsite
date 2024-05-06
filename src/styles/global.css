@@ -47,6 +47,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.alaotsikko{
+  font-size: 1.15rem;
+}
+
 a {
   color: #fff;
   font-family: SF;
