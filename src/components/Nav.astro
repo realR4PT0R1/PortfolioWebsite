@@ -7,137 +7,137 @@ const currentPath = Astro.url.pathname.replace(/\//g, "");
 <body>
   <nav class="navbar navbar-expand-xl sticky-top navbar-dark">
     <a href="/">
-      <Image src={laemkri} alt="logo" class="navlogo"/>
-      <button
-        name="navi"
-        id="collapse"
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-      >
-        <div class="navbar-toggler-icon"></div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a
-              class={currentPath === ""
-                ? "nav-link px-3 active"
-                : "nav-link px-3"}
-              href="/">Etusivu</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class={currentPath === "projektit"
-                ? "nav-link px-3 active"
-                : "nav-link px-3"}
-              href="/projektit/">Projekteja</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class={currentPath === "kokemus"
-                ? "nav-link px-3 active"
-                : "nav-link px-3"}
-              href="/kokemus/">Kokemus</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class={currentPath === "galleria"
-                ? "nav-link px-3 active"
-                : "nav-link px-3"}
-              href="/galleria/">Galleria</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class={currentPath === "blogi"
-                ? "nav-link px-3 active"
-                : "nav-link px-3"}
-              href="/blogi/">Blogi</a
-            >
-          </li>
-        </ul>
-        <p class="mb-3"></p>
-      </div>
+      <Image src={laemkri} alt="logo" class="navlogo" />
     </a>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    ></script>
+    <button
+      name="navi"
+      id="collapse"
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
+      <div class="navbar-toggler-icon"></div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a
+            class={currentPath === ""
+              ? "nav-link px-3 active"
+              : "nav-link px-3"}
+            href="/">Etusivu</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class={currentPath === "projektit"
+              ? "nav-link px-3 active"
+              : "nav-link px-3"}
+            href="/projektit/">Projekteja</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class={currentPath === "kokemus"
+              ? "nav-link px-3 active"
+              : "nav-link px-3"}
+            href="/kokemus/">Kokemus</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class={currentPath === "galleria"
+              ? "nav-link px-3 active"
+              : "nav-link px-3"}
+            href="/galleria/">Galleria</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class={currentPath === "blogi"
+              ? "nav-link px-3 active"
+              : "nav-link px-3"}
+            href="/blogi/">Blogi</a
+          >
+        </li>
+      </ul>
+      <p class="mb-3"></p>
+    </div>
   </nav>
-
-  <style>
-    header {
-      background-color: #181818;
-      height: 10px;
-      margin-bottom: -1px;
-    }
-
-    .navlogo {
-      margin-left: 15px;
-      height: 30px;
-      width: 170px;
-    }
-
-    nav {
-      font-family: SF;
-      background-color: #181818;
-      text-align: center;
-      border-bottom: 2px solid transparent;
-      border-image: linear-gradient(
-        0.25turn,
-        #d8d000,
-        #ff0080,
-        rgba(56, 2, 155, 0)
-      );
-      border-image-slice: 1;
-      width: 100%;
-    }
-
-    .navbar-collapse {
-      background-color: #181818;
-    }
-    .navbar {
-      position: sticky;
-      z-index: 1000;
-      padding: 0;
-    }
-
-    .nav-item::after {
-      content: "";
-      display: flex;
-      width: 0px;
-      height: 2px;
-      background: #ff0080;
-      transition: 0.25s;
-    }
-
-    .nav-item:hover::after {
-      width: 100%;
-    }
-
-    .nav-link:hover {
-      text-shadow: 1px 1px 7px #ffffff;
-      transition: 0.5s;
-    }
-
-    .navbar-toggler {
-      border: none;
-      transform: rotate(0deg);
-      transition: 0.5s ease-in-out;
-      margin-right: 10px;
-    }
-
-    .nav-item {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  ></script>
 </body>
+
+<style>
+  header {
+    background-color: #181818;
+    height: 10px;
+    margin-bottom: -1px;
+  }
+
+  .navlogo {
+    margin-left: 15px;
+    height: 30px;
+    width: 170px;
+  }
+
+  nav {
+    font-family: SF;
+    background-color: #181818;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      #d8d000,
+      #ff0080,
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    background-color: #181818;
+  }
+  .navbar {
+    position: sticky;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .nav-item::after {
+    content: "";
+    display: flex;
+    width: 0px;
+    height: 2px;
+    background: #ff0080;
+    transition: 0.25s;
+  }
+
+  .nav-item:hover::after {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    text-shadow: 1px 1px 7px #ffffff;
+    transition: 0.5s;
+  }
+
+  .navbar-toggler {
+    border: none;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    margin-right: 10px;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+</style>
