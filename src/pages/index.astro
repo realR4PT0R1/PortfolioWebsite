@@ -14,12 +14,12 @@ import katiskamac from "/public/katiskamac.png";
       <div class="col-md-6" data-aos="fade">
         <h1>3D-mallintaja + UI suunnittelija</h1>
         <p class="my-4"></p>
-        <h5>
+        <p class="alaotsikko">
           Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
           projekteihin mitä olen tehnyt vuosien varrella. <br /> Nettisivulle päivittyy
           aina uusia projekteja kun niitä tulee. <br /> Päivittelen sivuille myös
           keskeneräisiä projekteja.
-        </h5>
+        </p>
         <p class="mb-4"></p>
         <button onclick="document.location='/projektit/'" class="nappula"
           >Projektit</button
@@ -43,7 +43,7 @@ import katiskamac from "/public/katiskamac.png";
       <div data-aos="fade" class="col-md-6">
         <h1>Nettisivut</h1>
         <p class="my-4"></p>
-        <h5>Voit tutustua Nettisivuihini Projekteista</h5>
+        <p class="alaotsikko">Voit tutustua Nettisivuihini Projekteista</p>
         <p class="mb-4"></p>
         <button onclick="document.location='/projektit'" class="nappula "
           >Nettisivut</button
@@ -59,10 +59,10 @@ import katiskamac from "/public/katiskamac.png";
       <div data-aos="fade" class="col-md-6">
         <h1>Valokuviani</h1>
         <p class="my-4"></p>
-        <h5>
+        <p class="alaotsikko">
           Voit tutustua valokuviini ja muuhun kuvattuun tai tehtyyn
           kuvamateriaaliin Galleria-sivulta
-        </h5>
+        </p>
         <p class="mb-4"></p>
         <button onclick="document.location='/galleria'" class="nappula"
           >Galleria</button
@@ -128,6 +128,10 @@ import katiskamac from "/public/katiskamac.png";
     filter: blur(3rem);
     animation: rotation 10s linear infinite;
   } */
+
+  .alaotsikko{
+    font-size: 1.15rem;
+  }
 
   .space {
     height: 80px;
