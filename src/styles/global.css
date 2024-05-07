@@ -4,27 +4,27 @@
 }
 
 @font-face {
-  font-family: 'Wolfsburg-Regular';
-  src:url('../../Wolfsburg-Regular.otf'),
+  font-family: "Wolfsburg-Regular";
+  src: url("../../Wolfsburg-Regular.otf");
 }
 
 @font-face {
-  font-family: 'Nissan';
-  src:url('../../NissanOpti-Italic.otf'),
+  font-family: "Nissan";
+  src: url("../../NissanOpti-Italic.otf");
 }
 
-.red{
+.red {
   color: red;
 }
 
-.otsikkohr{
+.otsikkohr {
   background-color: #191919;
-    text-align:center;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(0.25turn, #d8d000, #ff0080);
-    border-image-slice: 1;
-    width:25%;
-    margin: auto;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, #d8d000, #ff0080);
+  border-image-slice: 1;
+  width: 25%;
+  margin: auto;
 }
 
 .img-cover {
@@ -34,7 +34,7 @@
   border-radius: 10px;
 }
 
-.front-img-cover{
+.front-img-cover {
   border-radius: 10px;
 }
 
@@ -47,7 +47,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.alaotsikko{
+.alaotsikko {
   font-size: 1.15rem;
 }
 
@@ -66,7 +66,6 @@ h1 {
   color: #fff;
   font-family: SF;
   font-weight: 100;
-
 }
 
 h2 {
@@ -89,11 +88,11 @@ h5 {
   font-family: SF;
 }
 
-Img{
+Img {
   margin: 5px;
 }
 
-.spacer{
+.spacer {
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
@@ -118,12 +117,17 @@ Img{
 
 .keltanenhr {
   font-family: SF;
-    background-color: #191919;
-    text-align:center;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(0.25turn, #d8d000, #ff0080, rgba(56,2,155,0));
-    border-image-slice: 1;
-    width:100%;
+  background-color: #191919;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    #d8d000,
+    #ff0080,
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 100%;
 }
 
 .keltanenhr2 {
@@ -134,7 +138,7 @@ Img{
 }
 
 .front-img-cover {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
