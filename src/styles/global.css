@@ -27,14 +27,17 @@
   margin: auto;
 }
 
+
+.front-img-cover {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .img-cover {
   height: 200px;
   width: 300px;
   object-fit: cover;
-  border-radius: 10px;
-}
-
-.front-img-cover {
   border-radius: 10px;
 }
 
@@ -135,10 +138,4 @@ Img {
   border-top: 3px solid #ff0080;
 
   margin: 0 42.4%;
-}
-
-.front-img-cover {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }

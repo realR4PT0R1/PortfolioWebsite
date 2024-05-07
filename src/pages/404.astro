@@ -9,7 +9,7 @@ import Layout from "../layouts/Layout.astro";
         <h1 class="text-center gradient-title">Virhe 404</h1>
         <hr class="keltanenhr" />
         <h2 class="text-center pt-5">Hakemaasi sivua ei löytynyt</h2>
-        <hr />
+        <h3 class="text-center pt-5">Palaa <a href="/">Etusivulle</a></h3>
       </div>
     </div>
   </div>
@@ -18,5 +18,13 @@ import Layout from "../layouts/Layout.astro";
 <style>
   div {
     min-height: 547px;
+  }
+  a {
+    font-size: 28px;
+    color: #f441a5;
+  }
+
+  a:hover {
+    color: #a4055f;
   }
 </style>

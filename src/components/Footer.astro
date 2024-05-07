@@ -6,9 +6,10 @@ import github from "/public/github.png";
 import instagram from "/public/Instagram.png";
 ---
 
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer>
+  <!--class="text-center text-lg-start bg-body-tertiary text-muted" -->
   <section>
-    <div class="container text-center text-md-start mt-5">
+    <div class="container mt-4">
       <div class="row mt-3 text-center">
         <div class="col-md-3 mx-auto">
           <Image src={laemkri} alt="logo" class="footer-logo" />
@@ -19,7 +20,7 @@ import instagram from "/public/Instagram.png";
           <br />
           <a href="/kokemus">Kokemus 🡶 </a>
         </div>
-        <div class="col-md-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-3 mx-auto mb-4">
           <p class="text-uppercase fw-bold my-4 footer-otsikko">Somet</p>
           <hr />
           <a href="https://www.instagram.com/mankilauri/" class="mx-1">
@@ -43,16 +44,11 @@ import instagram from "/public/Instagram.png";
 
   <style>
     .footer-logo {
+      margin-top: 20px;
       height: 30px;
       width: 170px;
     }
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
     .bottom {
       background-color: #161616;
       margin: 0px;
@@ -60,13 +56,16 @@ import instagram from "/public/Instagram.png";
       font-family: SF;
       text-align: center;
     }
+
     .footer-otsikko {
       color: #d8d000;
       text-align: center;
     }
+
     footer {
       position: relative;
     }
+
     section {
       font-family: SF;
       background-color: #1c1c1c;
@@ -81,9 +80,11 @@ import instagram from "/public/Instagram.png";
       border-image-slice: 1;
       width: 100%;
     }
+
     .container {
       background-color: #1c1c1c;
     }
+
     .text-center {
       font-family: "Latol", sans-serif;
       color: rgb(255, 255, 255);

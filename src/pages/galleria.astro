@@ -3,24 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Camaro1123 from "../../public/Camaro 1-1-23.jpg";
 import Camaro30123 from "../../public/Camaro 30-1-23.png";
-import Camaro301232 from "../../public/Camaro 30-1-23(2).png";
 import Carshop from "../../public/Carshop 11-01-24.png";
 import Climate from "../../public/19-09-23.png";
 import NaantaliSPA from "../../public/naantali spa proto 23-01-24.png";
 import Note3 from "../../public/Note 3 13-04-23.jpg";
 import AudiS4C4 from "../../public/Audi S4 C4.png";
 import monkeytarrat from "../../public/monkey tarrat.png";
-import katiska from "../../public/katiska logo.png";
-import laemkri from "../../public/Laemkri logo.png";
-import union from "../../public/UNION.png";
 import dimensiontest from "/public/Dimension test.png";
 import gs2cm11 from "/public/galaxys2cm11.jpeg";
 import skyteam from "/public/skyteam.jpeg";
 import honda from "/public/honda.jpg";
 import peli97 from "/public/finngm.png";
-import katiskapuh from "/public/14pro.png";
-import katiskamac from "/public/katiskamac.png";
 import blackbird from "/public/bluebird musta.png";
+import vento2 from "/public/vento2.png";
 ---
 
 <Layout pageTitle="Galleria | Laemkri">
@@ -37,56 +32,63 @@ import blackbird from "/public/bluebird musta.png";
         data-aos-duration="800"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={Camaro1123} alt="" />
+        <Image class="img-cover" src={Camaro1123} alt="Camaro" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="1000"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={Camaro30123} alt="" />
+        <Image class="img-cover" src={Camaro30123} alt="Camaro" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="1200"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={blackbird} alt="" />
+        <Image class="img-cover" src={blackbird} alt="Bluebird" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="1400"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={Carshop} alt="" />
+        <Image class="img-cover" src={Carshop} alt="Autokauppa" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="1600"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={Climate} alt="" />
+        <Image class="img-cover" src={Climate} alt="Ilmastointi" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="1800"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={Note3} alt="" />
+        <Image class="img-cover" src={Note3} alt="Note3" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="2000"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={NaantaliSPA} alt="" />
+        <Image class="img-cover" src={NaantaliSPA} alt="Naantali SPA" />
       </div>
       <div
         data-aos="fade"
         data-aos-duration="2200"
         class="col-xxl-3 col-xl-4 col-md-6"
       >
-        <Image class="img-cover" src={AudiS4C4} alt="" />
+        <Image class="img-cover" src={AudiS4C4} alt="Audi S4" />
+      </div>
+      <div
+        data-aos="fade"
+        data-aos-duration="2200"
+        class="col-xxl-3 col-xl-4 col-md-6"
+      >
+        <Image class="img-cover" src={vento2} alt="VW Vento" />
       </div>
     </div>
 
@@ -162,16 +164,12 @@ import blackbird from "/public/bluebird musta.png";
         color: #d8d000;
       }
       p {
-        color: aliceblue;
+        color: #fff;
         font-family: SF;
       }
       h1 {
-        color: aliceblue;
+        color: #fff;
         font-family: SF;
-      }
-      .card {
-        background-color: rgba(173, 39, 39, 0);
-        border: none;
       }
     </style>
   </div>
