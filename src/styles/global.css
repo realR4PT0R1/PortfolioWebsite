@@ -109,6 +109,13 @@ Img{
   text-align: center;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .keltanenhr {
   font-family: SF;
     background-color: #191919;
