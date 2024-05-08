@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import laemkri from "/public/Laemkri.png";
 import nav from "/public/hambur.png";
 const currentPath = Astro.url.pathname.replace(/\//g, "");
+import Hamburger from "../components/Hamburger.astro";
+
 ---
 
 <body>
@@ -17,9 +19,8 @@ const currentPath = Astro.url.pathname.replace(/\//g, "");
       aria-label="navivalikko"
       type="button"
       data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-    >
-      <Image src={nav} alt="" />
+      data-target="#navbarSupportedContent"><Hamburger></Hamburger>
+   
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto">
@@ -90,7 +91,7 @@ const currentPath = Astro.url.pathname.replace(/\//g, "");
 
   nav {
     font-family: SF;
-    background-color: #181818;
+    background-color: #151515;
     text-align: center;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(
@@ -105,6 +106,8 @@ const currentPath = Astro.url.pathname.replace(/\//g, "");
 
   .navbar-collapse {
     background-color: #151515;
+    margin-left: 25px;
+
   }
 
   .navbar {
@@ -138,7 +141,6 @@ const currentPath = Astro.url.pathname.replace(/\//g, "");
   }
 
   .nav-item {
-    margin-left: 25px;
     margin-right: 25px;
     text-align: left;
   }

@@ -12,5 +12,8 @@
   "dependencies": {
     "astro": "^4.6.1",
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.30"
   }
 }
