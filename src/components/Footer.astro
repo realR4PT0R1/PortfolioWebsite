@@ -13,35 +13,37 @@ import instagram from "/public/Instagram.png";
         <div class="col-md-3 mx-auto">
           <Image src={laemkri} alt="logo" class="footer-logo" />
           <hr />
-          <a href="/projektit">Projektit <span class="white">→ </span> </a>
+          <a class="links234" href="/projektit">Projektit <span class="white"> → </span> </a>
           <br />
-          <a href="/blogi">Blogit <span class="white">→ </span> </a>
+          <a class="links234" href="/blogi">Blogit <span class="white"> → </span> </a>
           <br />
-          <a href="/kokemus">Kokemus <span class="white">→ </span> </a>
+          <a class="links234" href="/kokemus">Kokemus <span class="white"> → </span> </a>
         </div>
-        <div class="col-md-3 mx-auto mb-4">
+        <div class="col-md-3 mx-auto">
           <p class="text-uppercase fw-bold my-4 footer-otsikko">Somet</p>
           <hr />
           <a href="https://www.instagram.com/mankilauri/" class="mx-1">
             <Image src={instagram} alt="instagram" class="instagram" />
           </a>
+          
+          <a href="https://www.linkedin.com/in/lauri-raitio-8827b5291/" class="mx-2">
+            <Image src={linkedin} alt="linkedin" class="linkedin" />
+          </a>
           <a href="https://github.com/realR4PT0R1" class="mx-2">
             <Image src={github} alt="github" class="github" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/lauri-raitio-8827b5291/"
-            class="mx-1"
-          >
-            <Image src={linkedin} alt="linkedin" class="linkedin" />
-          </a>
         </div>
       </div>
-      <div class="my-5"></div>
+      <div class="my-5"/>
     </div>
     <p class="bottom">Copyright &copy; Laemkri 2024</p>
   </section>
 
   <style>
+    .links234:hover{
+      margin-left: 10px;
+    }
+
     .footer-logo {
       margin-top: 20px;
       height: 30px;
@@ -96,13 +98,33 @@ import instagram from "/public/Instagram.png";
     }
 
     .linkedin {
-      width: 35px;
-      height: 35px;
+      width: 32px;
+      height: 32px;
     }
 
     .instagram {
       width: 32px;
       height: 32px;
+    }
+
+    .instagram:hover {
+      width: 40px;
+      height: 40px;
+      transition: 0.5s;
+    }
+    .linkedin:hover {
+      width: 40px;
+      height: 40px;
+      transition: 0.5s;
+      
+
+    }
+    .github:hover {
+      width: 40px;
+      height: 40px;
+      transition: 0.5s;
+      
+
     }
 
     p {
