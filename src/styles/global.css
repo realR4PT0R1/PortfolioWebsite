@@ -11,6 +11,10 @@
 @font-face {
   font-family: "Nissan";
   src: url("../../NissanOpti-Italic.otf");
+} 
+
+.white {
+  color: #fff;
 }
 
 .red {
