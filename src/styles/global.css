@@ -3,26 +3,12 @@
   src: url(../../SF-Pro-Display-Regular.otf);
 }
 
-@font-face {
-  font-family: "Wolfsburg-Regular";
-  src: url("../../Wolfsburg-Regular.otf");
-}
-
-@font-face {
-  font-family: "Nissan";
-  src: url("../../NissanOpti-Italic.otf");
-} 
-
 .white {
   color: #fff;
 }
 
 .red {
   color: red;
-}
-
-.fontsf{
-  font-family: SF;
 }
 
 .otsikkohr {
@@ -160,7 +146,7 @@ Img {
 .opintootsikko {
   font-family: SF;
   font-weight: 100;
-  font-size: 26px;
+  font-size: 38px;
   background: #ff0080;
   background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
   -webkit-background-clip: text;
