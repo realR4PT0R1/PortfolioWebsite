@@ -69,8 +69,17 @@ a {
   font-size: 16px;
 }
 
+a:hover {
+  color: #d8d000;
+}
+
+a:active {
+  color: #d8d000;
+}
+
 p {
   font-family: SF;
+  color: #fff;
 }
 
 h1 {
