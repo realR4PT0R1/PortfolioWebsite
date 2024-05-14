@@ -147,3 +147,13 @@ Img {
 
   margin: 0 42.4%;
 }
+
+.opintootsikko {
+  font-family: SF;
+  font-weight: 100;
+  font-size: 26px;
+  background: #ff0080;
+  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
