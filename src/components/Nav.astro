@@ -116,7 +116,8 @@ import Hamburger from "../components/Hamburger.astro";
     padding: 0;
   }
 
-  .nav-item::after {
+  @media (hover: hover) {
+    .nav-item::after {
     content: "";
     display: flex;
     width: 0px;
@@ -133,6 +134,9 @@ import Hamburger from "../components/Hamburger.astro";
     text-shadow: 1px 1px 7px #ffffff;
     transition: 0.5s;
   }
+
+  }
+ 
 
   .navbar-toggler {
     border: none;

@@ -149,6 +149,7 @@ Img {
   font-size: 38px;
   background: #ff0080;
   background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -159,6 +160,7 @@ Img {
   font-size: 30px;
   background: #ff0080;
   background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
