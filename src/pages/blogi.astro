@@ -35,7 +35,7 @@ import roskat from "/public/roskat.png";
     <div class="row my-5">
       <hr class="keltanenhr" />
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
-        <h1 class="vento">
+        <h1 class="opintootsikko">
           Volkswagen Vento <span class="red"> VR6 </span>
         </h1>
         <h5>Vento projektia edistetty 30.4.2024</h5>
@@ -57,7 +57,7 @@ import roskat from "/public/roskat.png";
     <hr class="keltanenhr" />
     <div class="row">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
-        <h1 class="bluebird">Nissan Bluebird 1.6 SLX</h1>
+        <h1 class="opintootsikko">Nissan Bluebird 1.6 SLX</h1>
         <h5>Auto tuotu Unityyn Blenderistä 29.4.2024</h5>
         <p class="text-underline">29.4.2024</p>
       </div>
@@ -69,7 +69,7 @@ import roskat from "/public/roskat.png";
 
     <div class="row">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
-        <h1 class="fontsf">Ravintola Katiska Julkaisu</h1>
+        <h1 class="opintootsikko">Ravintola Katiska Julkaisu</h1>
         <p class="text-underline">24.4.2024</p>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
@@ -85,7 +85,7 @@ import roskat from "/public/roskat.png";
 
     <div class="row">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
-        <h1 class="fontsf">Ravintola Katiska Prototyyppi</h1>
+        <h1 class="opintootsikko">Ravintola Katiska Prototyyppi</h1>
         <p class="text-underline">20.3.2024</p>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
@@ -101,7 +101,7 @@ import roskat from "/public/roskat.png";
 
     <div class="row">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
-        <h1 class="fontsf">Volvo City L (2004)</h1>
+        <h1 class="opintootsikko">Volvo City L (2004)</h1>
         <h5>Projekti Blenderissä</h5>
         <p class="text-underline">3.9.2023</p>
       </div>
@@ -113,7 +113,7 @@ import roskat from "/public/roskat.png";
 
     <div class="row">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
-        <h1 class="fontsf">Mercury Comet (1964)</h1>
+        <h1 class="opintootsikko">Mercury Comet (1964)</h1>
         <h5>Projekti Blenderissä</h5>
 
         <p class="text-underline">15.5.2023</p>
@@ -130,9 +130,15 @@ import roskat from "/public/roskat.png";
     color: #fff;
   }
 
-  h1 {
-    font-weight: 600;
-  }
+  .opintootsikko {
+  font-family: SF;
+  font-weight: 100;
+  font-size: 26px;
+  background: #ff0080;
+  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
   .vento {
     font-family: Wolfsburg-Regular;
