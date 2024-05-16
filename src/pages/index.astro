@@ -16,16 +16,16 @@ import Arrow from "../components/Arrow.astro";
     <div class="row">
       <div class="hero">
         <div class="col-md-12 mb-4" >
-          <h1 class="nimi" data-aos="fade">Lauri Raitio</h1>
+          <h1 class="nimi" data-aos="fade" data-aos-duration="500">Lauri Raitio</h1>
           <p class="my-4"></p>
-          <p class="alaotsikko" data-aos="fade">
+          <p class="alaotsikko" data-aos="fade" data-aos-duration="13500">
             Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
             projekteihini. <br /> Nettisivulle päivittyy
             aina uusia projekteja kun niitä tulee. <br /> Päivittelen sivuille myös
             keskeneräisiä projekteja.
           </p>
           <p class="mb-4"></p>
-          <button onclick="document.location='/projektit/'" class="btn" data-aos="fade"
+          <button onclick="document.location='/projektit/'" class="btn" data-aos="fade" data-aos-duration="13800"
             >PROJEKTIT</button
           >
         </div>
@@ -41,7 +41,7 @@ import Arrow from "../components/Arrow.astro";
             <Image src={github} alt="github" class="github" />
           </a>
         </div>
-        <Arrow data-aos="fade"></Arrow>
+        <Arrow></Arrow>
       </div>
     </div>
   </div>
