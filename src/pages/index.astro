@@ -3,76 +3,84 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Camaro30123 from "../../public/Camaro 30-1-23.png";
 import bmw from "/public/bmw.png";
-import katiskamac from "/public/katiskamac.png";
+import comet from "/public/comet.png";
+import mojave from "/public/Mojave.jpg";
+import linkedin from "/public/Linkedin.png";
+import github from "/public/github.png";
+import instagram from "/public/Instagram.png";
+import Arrow from "../components/Arrow.astro";
 ---
 
 <Layout pageTitle="Laemkri">
-  <br />
-  <div class="container">
-    <p class="my-5"/>
+  <div class="hero-image">
     <div class="row">
-      <div class="col-md-6 mb-4" data-aos="fade">
-        <h1>Lauri Raitio</h1>
-        <p class="my-4"/>
-        <p class="alaotsikko">
-          Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
-          projekteihin mitä olen tehnyt vuosien varrella. <br /> Nettisivulle päivittyy
-          aina uusia projekteja kun niitä tulee. <br /> Päivittelen sivuille myös
-          keskeneräisiä projekteja.
-        </p>
-        <p class="mb-4"/>
-        <button onclick="document.location='/projektit/'" class="btn"
-          >PROJEKTIT</button
-        >
-      </div>
-      <div class="col-md-6 kuvaa" data-aos="fade">
-        <Image
-          class="camaro1 front-img-cover"
-          src={Camaro30123}
-          alt="camaro"
-          decoding="sync"
-        />
+      <div class="hero">
+        <div class="col-md-12 mb-4" data-aos="fade">
+          <h1 class="nimi">Lauri Raitio</h1>
+          <p class="my-4"></p>
+          <p class="alaotsikko">
+            Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
+            projekteihini. <br /> Nettisivulle päivittyy
+            aina uusia projekteja kun niitä tulee. <br /> Päivittelen sivuille myös
+            keskeneräisiä projekteja.
+          </p>
+          <p class="mb-4"></p>
+          <button onclick="document.location='/projektit/'" class="btn"
+            >PROJEKTIT</button
+          >
+        </div>
+        <div class="col-md-3 mx-auto my-5">
+          <a href="https://www.instagram.com/mankilauri/" class="mx-1">
+            <Image src={instagram} alt="instagram" class="instagram" />
+          </a>
+          
+          <a href="https://www.linkedin.com/in/lauri-raitio-8827b5291/" class="mx-2">
+            <Image src={linkedin} alt="linkedin" class="linkedin" />
+          </a>
+          <a href="https://github.com/realR4PT0R1" class="mx-2">
+            <Image src={github} alt="github" class="github" />
+          </a>
+        </div>
+        <Arrow></Arrow>
       </div>
     </div>
   </div>
-  <p class="my-5"/>
+  <p class="my-5"></p>
   <div class="container">
-    <p class="my-5"/>
+    <p class="my-5"></p>
     <div class="row">
-      <div data-aos="fade" class="col-md-6 camarokuva">
-        <Image src={katiskamac} alt="mac" class="front-img-cover" />
+      <div data-aos="fade" class="col-md-6">
+        <Image src={comet} alt="comet" class="front-img-cover" />
       </div>
       <div data-aos="fade" class="col-md-6">
-        <h1>Nettisivut</h1>
-        <p class="my-4"/>
-        <p class="alaotsikko">Voit tutustua Nettisivuihini Projekteista</p>
-        <p class="mb-4"/>
-        <button onclick="document.location='/projektit'" class="btn"
-          >NETTISIVUT</button
-        >
+        <h1>Blogi</h1>
+        <p class="my-4"></p>
+        <p class="alaotsikko">Päivittelen blogiin tulevia projekteja.</p>
+        <p class="mb-4"></p>
+        <button onclick="document.location='/blogi'" class="btn">BLOGI</button>
       </div>
-      <p class="my-5"/>
+      <p class="my-5"></p>
     </div>
   </div>
 
   <div class="container">
-    <p class="mx-5"/>
+    <p class="mx-5"></p>
     <div class="row">
       <div data-aos="fade" class="col-md-6 mb-4">
         <h1>Valokuviani</h1>
-        <p class="my-4"/>
+        <p class="my-4"></p>
         <p class="alaotsikko">
           Voit tutustua valokuviini ja muuhun kuvattuun tai tehtyyn
           kuvamateriaaliin Galleria-sivulta
         </p>
-        <p class="mb-4"/>
+        <p class="mb-4"></p>
         <button onclick="document.location='/galleria'">GALLERIA</button>
       </div>
-      <div data-aos="fade" class="col-md-6 camarokuva">
+      <div data-aos="fade" class="col-md-6">
         <Image src={bmw} width={600} alt="kuvia" class="front-img-cover" />
       </div>
     </div>
-    <p class="my-5"/>
+    <p class="my-5"></p>
   </div>
 </Layout>
 
@@ -146,13 +154,18 @@ import katiskamac from "/public/katiskamac.png";
     height: 90px;
   }
 
+  .nimi {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 49px;
+  }
+
   h1 {
     font-family: SF;
     font-weight: 700;
     color: #212121;
     background: linear-gradient(to right, #d8d000, #ff0080);
     -webkit-background-clip: text;
-  -webkit-text-stroke: 0.08em transparent;
+    -webkit-text-stroke: 0.08em transparent;
   }
 
   h5 {
@@ -165,4 +178,43 @@ import katiskamac from "/public/katiskamac.png";
   a {
     color: #d8d000;
   }
+
+  .hero-image {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.684),
+        rgba(52, 0, 0, 0.575)
+      ),
+      url("/public/Mojave.jpg");
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 900px;
+    object-fit: cover;
+  }
+
+  .hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .github {
+      width: 38px;
+      height: 38px;
+    }
+
+    .linkedin {
+      width: 40px;
+      height: 40px;
+    }
+
+    .instagram {
+      width: 38px;
+      height: 38px;
+    }
+    
 </style>

@@ -52,6 +52,14 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="line">
+          <p class="wwp">WORDPRESS</p>
+          <div class="bar">
+            <div class="line_bar wp"></div>
+          </div>
+          <h5>65</h5>
+        </div>
+
+        <div class="line">
           <p class="aid">ADOBE InDesign</p>
           <div class="bar">
             <div class="line_bar id"></div>
@@ -176,26 +184,31 @@ import Layout from "../layouts/Layout.astro";
 
     .line_content .line:nth-child(6) h5::after,
     .line_content .line:nth-child(6) h5 {
-      background: #ff1b45;
+      background: #21759b;
     }
 
     .line_content .line:nth-child(7) h5::after,
     .line_content .line:nth-child(7) h5 {
-      background: #ff3300;
+      background: #ff1b45;
     }
 
     .line_content .line:nth-child(8) h5::after,
     .line_content .line:nth-child(8) h5 {
-      background: #a352ff;
+      background: #ff3300;
     }
 
     .line_content .line:nth-child(9) h5::after,
     .line_content .line:nth-child(9) h5 {
-      background: #8400cb;
+      background: #a352ff;
     }
 
     .line_content .line:nth-child(10) h5::after,
     .line_content .line:nth-child(10) h5 {
+      background: #8400cb;
+    }
+
+    .line_content .line:nth-child(11) h5::after,
+    .line_content .line:nth-child(11) h5 {
       background: #ff3269;
     }
 
@@ -232,6 +245,11 @@ import Layout from "../layouts/Layout.astro";
     .line_content .ai {
       width: 75%;
       background: linear-gradient(to right, #202020 0%, #ff761b 100%);
+    }
+
+    .line_content .wp {
+      width: 60%;
+      background: linear-gradient(to right, #202020 0%, #21759b 100%);
     }
 
     .line_content .id {
@@ -296,6 +314,10 @@ import Layout from "../layouts/Layout.astro";
 
     .aai {
       color: #ff761b;
+    }
+
+    .wwp {
+      color: #21759b;
     }
 
     .aid {
