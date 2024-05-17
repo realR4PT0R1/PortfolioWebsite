@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import Camaro30123 from "../../public/Camaro 30-1-23.png";
 import bmw from "/public/bmw.png";
 import comet from "/public/comet.png";
-import mojave from "/public/Mojave.jpg";
 import linkedin from "/public/Linkedin.png";
 import github from "/public/github.png";
 import instagram from "/public/Instagram.png";
@@ -15,33 +13,40 @@ import Arrow from "../components/Arrow.astro";
   <div class="hero-image">
     <div class="row">
       <div class="hero">
-        <div class="col-md-12 mb-4" >
-          <h1 class="nimi" data-aos="fade" data-aos-duration="500">Lauri Raitio</h1>
+        <div class="col-md-12 mb-4">
+          <h1 class="nimi" data-aos="fade" data-aos-duration="500">
+            Lauri Raitio
+          </h1>
           <p class="my-4"></p>
           <p class="alaotsikko" data-aos="fade" data-aos-duration="13500">
             Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
-            projekteihini. <br /> Nettisivulle päivittyy
-            aina uusia projekteja kun niitä tulee. <br /> Päivittelen sivuille myös
-            keskeneräisiä projekteja.
+            projekteihini. <br /> Nettisivulle päivittyy aina uusia projekteja kun
+            niitä tulee. <br /> Päivittelen sivuille myös keskeneräisiä projekteja.
           </p>
           <p class="mb-4"></p>
-          <button onclick="document.location='/projektit/'" class="btn" data-aos="fade" data-aos-duration="13800"
-            >PROJEKTIT</button
+          <button
+            onclick="document.location='/projektit/'"
+            class="btn"
+            data-aos="fade"
+            data-aos-duration="13800">PROJEKTIT</button
           >
         </div>
         <div class="col-md-3 mx-auto my-5" data-aos="fade">
           <a href="https://www.instagram.com/mankilauri/" class="mx-1">
             <Image src={instagram} alt="instagram" class="instagram" />
           </a>
-          
-          <a href="https://www.linkedin.com/in/lauri-raitio-8827b5291/" class="mx-2">
+
+          <a
+            href="https://www.linkedin.com/in/lauri-raitio-8827b5291/"
+            class="mx-2"
+          >
             <Image src={linkedin} alt="linkedin" class="linkedin" />
           </a>
           <a href="https://github.com/realR4PT0R1" class="mx-2">
             <Image src={github} alt="github" class="github" />
           </a>
         </div>
-        <Arrow></Arrow>
+        <Arrow />
       </div>
     </div>
   </div>
@@ -155,7 +160,10 @@ import Arrow from "../components/Arrow.astro";
   }
 
   .nimi {
-    text-shadow: 1px 1px 2px #d8d000, 0 0 1em red, 0 0 0.2em #ff0080;
+    text-shadow:
+      1px 1px 2px #d8d000,
+      0 0 1em red,
+      0 0 0.2em #ff0080;
     font-size: 49px;
     font-family: SF;
   }
@@ -205,18 +213,17 @@ import Arrow from "../components/Arrow.astro";
   }
 
   .github {
-      width: 38px;
-      height: 38px;
-    }
+    width: 38px;
+    height: 38px;
+  }
 
-    .linkedin {
-      width: 40px;
-      height: 40px;
-    }
+  .linkedin {
+    width: 40px;
+    height: 40px;
+  }
 
-    .instagram {
-      width: 38px;
-      height: 38px;
-    }
-    
+  .instagram {
+    width: 38px;
+    height: 38px;
+  }
 </style>

@@ -4,7 +4,6 @@ import laemkri from "/public/Laemkri.png";
 import nav from "/public/hambur.png";
 const currentPath = Astro.url.pathname.replace(/\//g, "");
 import Hamburger from "../components/Hamburger.astro";
-
 ---
 
 <body>
@@ -19,8 +18,8 @@ import Hamburger from "../components/Hamburger.astro";
       aria-label="navivalikko"
       type="button"
       data-toggle="collapse"
-      data-target="#navbarSupportedContent"><Hamburger></Hamburger>
-   
+      data-target="#navbarSupportedContent"
+      ><Hamburger />
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto">
@@ -94,11 +93,7 @@ import Hamburger from "../components/Hamburger.astro";
     background-color: #151515;
     text-align: center;
     border-bottom: 2px solid transparent;
-    border-image: linear-gradient(
-      0.25turn,
-      #d8d000,
-      #ff0080
-    );
+    border-image: linear-gradient(0.25turn, #d8d000, #ff0080);
     border-image-slice: 1;
     width: 100%;
   }
@@ -106,7 +101,6 @@ import Hamburger from "../components/Hamburger.astro";
   .navbar-collapse {
     background-color: #151515;
     margin-left: 25px;
-
   }
 
   .navbar {
@@ -117,29 +111,23 @@ import Hamburger from "../components/Hamburger.astro";
 
   @media (hover: hover) {
     .nav-item::after {
-    content: "";
-    display: flex;
-    width: 0px;
-    height: 2px;
-    background-image: linear-gradient(
-      0.25turn,
-      #d8d000,
-      #ff0080
-    );
-    transition: 0.25s;
-  }
+      content: "";
+      display: flex;
+      width: 0px;
+      height: 2px;
+      background-image: linear-gradient(0.25turn, #d8d000, #ff0080);
+      transition: 0.25s;
+    }
 
-  .nav-item:hover::after {
-    width: 100%;
-  }
+    .nav-item:hover::after {
+      width: 100%;
+    }
 
-  .nav-link:hover {
-    text-shadow: 1px 1px 7px #ffffff;
-    transition: 0.5s;
+    .nav-link:hover {
+      text-shadow: 1px 1px 7px #ffffff;
+      transition: 0.5s;
+    }
   }
-
-  }
- 
 
   .navbar-toggler {
     border: none;
