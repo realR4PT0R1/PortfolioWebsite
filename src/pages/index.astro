@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import bmw from "/public/bmw.png";
+import macfivesix from "/public/macmocfivesix.png";
 import comet from "/public/comet.png";
 import linkedin from "/public/Linkedin.png";
 import github from "/public/github.png";
@@ -72,17 +72,16 @@ import Arrow from "../components/Arrow.astro";
     <p class="mx-5"></p>
     <div class="row">
       <div data-aos="fade" class="col-md-6 mb-4">
-        <h1>Valokuviani</h1>
+        <h1>Kokemus</h1>
         <p class="my-4"></p>
         <p class="alaotsikko">
-          Voit tutustua valokuviini ja muuhun kuvattuun tai tehtyyn
-          kuvamateriaaliin Galleria-sivulta
+          Voit tutustua kokemukseeni linkistä
         </p>
         <p class="mb-4"></p>
-        <button onclick="document.location='/galleria'">GALLERIA</button>
+        <button onclick="document.location='/kokemus'">KOKEMUS</button>
       </div>
       <div data-aos="fade" class="col-md-6">
-        <Image src={bmw} width={600} alt="kuvia" class="front-img-cover" />
+        <Image src={macfivesix} width={600} alt="kuvia" class="front-img-cover" />
       </div>
     </div>
     <p class="my-5"></p>
@@ -193,7 +192,7 @@ import Arrow from "../components/Arrow.astro";
         rgba(0, 0, 0, 0.684),
         rgba(52, 0, 0, 0.575)
       ),
-      url("/public/Mojave.jpg");
+      url("/public/taustaa.jpg");
     height: 50%;
     background-position: center;
     background-size: cover;
