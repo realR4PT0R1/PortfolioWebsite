@@ -10,6 +10,7 @@ import comet from "/public/comet.png";
 import vento2 from "/public/vento2.png";
 import renkaat from "/public/ruosterenkaat.png";
 import roskat from "/public/roskat.png";
+import fivesix from "/public/fivesiks.png";
 ---
 
 <Layout pageTitle="Blogi | Laemkri">
@@ -18,6 +19,17 @@ import roskat from "/public/roskat.png";
       Blogi
     </h1>
     <hr class="otsikkohr mb-4" />
+    <div class="row my-5">
+      <hr class="keltanenhr" />
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
+        <h1 class="aliotsikko">FiveSix:n nettisivut</h1>
+        <h5>Kuvitteellisen FiveSix kaupan nettisivut</h5>
+        <p class="text-underline">20.5.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={fivesix} alt="Vento" />
+      </div>
+    </div>
     <div class="row my-5">
       <hr class="keltanenhr" />
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
@@ -43,12 +55,12 @@ import roskat from "/public/roskat.png";
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
-        <Image class="img-fluid rounded" src={vento} alt="Vento" />
-      </div>
-      <div class="col-md-6" data-aos="fade-left" data-aos-duration="500">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
         <h5>Vento projekti Blenderissä aloitettu 29.4.2024</h5>
         <p class="text-underline">30.4.2024</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <Image class="img-fluid rounded" src={vento} alt="Vento" />
       </div>
     </div>
     <hr class="keltanenhr" />
