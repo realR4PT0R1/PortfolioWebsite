@@ -21,10 +21,17 @@ import Layout from "../layouts/Layout.astro";
   }
   a {
     font-size: 28px;
-    color: #f441a5;
+    background: linear-gradient(#ff0080, #d8d000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 2s;
   }
 
   a:hover {
-    color: #a4055f;
+    transition: 2s;
+    background: linear-gradient(#d8d000, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
   }
 </style>
