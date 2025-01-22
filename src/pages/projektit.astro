@@ -17,6 +17,11 @@ import risteys from "/public/risteys.png";
 import blackbird from "/public/bluebird musta.png";
 import renkaat from "/public/ruosterenkaat.png";
 import projekti3 from "/public/Projekti 3-vuosi.png";
+import autosisa from "/public/auto-sisä.png";
+import autoetu from "/public/auto-etu.png";
+import autotaka from "/public/auto-taka.png";
+import autologo from "/public/auto-logo.png";
+
 ---
 
 <Layout pageTitle="Projektit | Laemkri">
@@ -26,16 +31,39 @@ import projekti3 from "/public/Projekti 3-vuosi.png";
       Projektit
     </h1>
     <hr class="otsikkohr" />
+
     <div class="my-4"></div>
-    <h1 data-aos="fade">Kolmannen vuoden projekti</h1>
+    <h1 data-aos="fade">Datsun 610 | 180B | 1976</h1>
     <hr class="keltanenhr" />
     <p data-aos="fade">
-      Tehtävänäni oli luoda monikäyttöisen sovelluksen ulkoasu Figman avulla
+      Blenderissä tehty ja renderöity Datsun projekti
     </p>
     <hr class="keltanenhr" />
     <div class="row">
       <div data-aos="fade-right" class="col-lg-5 text-center">
-        <Image class="img-fluid" height={450} src={projekti3} alt="iphone" />
+        <Image class="img-fluid rounded" height={450} src={autosisa} alt="sisusta" />
+      </div>
+      <div data-aos="fade-left" class="col-lg-5 text-center">
+        <Image class="img-fluid rounded" height={450} src={autoetu} alt="etuosa" />
+      </div>
+      <div data-aos="fade-right" class="col-lg-5 text-center">
+        <Image class="img-fluid rounded" height={450} src={autotaka} alt="takaosa" />
+      </div>
+      <div data-aos="fade-left" class="col-lg-5 text-center">
+        <Image class="img-fluid rounded" height={450} src={autologo} alt="sivulogo" />
+      </div>
+    </div>
+
+    <div class="my-4"></div>
+    <h1 data-aos="fade">Kolmannen vuoden projekti</h1>
+    <hr class="keltanenhr" />
+    <p data-aos="fade">
+      Tehtävänäni oli luoda monikäyttöisen sovelluksen ulkoasu Figman avulla, josta toteutettiin Android sovellus.
+    </p>
+    <hr class="keltanenhr" />
+    <div class="row">
+      <div data-aos="fade-right" class="col-lg-5 text-center">
+        <Image class="img-fluid" height={450} src={projekti3} alt="sovellus" />
       </div>
     </div>
     <div class="row justify-content-center">
@@ -112,7 +140,7 @@ import projekti3 from "/public/Projekti 3-vuosi.png";
       <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
         <Image
           class="img-fluid rounded"
-          src={bluebirdinterior}
+          src={risteys}
           alt="sitirentti"
         />
       </div>
@@ -120,7 +148,7 @@ import projekti3 from "/public/Projekti 3-vuosi.png";
         <Image class="img-fluid rounded" src={pelitalot} alt="taloja" />
       </div>
       <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={risteys} alt="keskus" />
+        <Image class="img-fluid rounded" src={bluebirdinterior} alt="keskus" />
       </div>
 
       <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
