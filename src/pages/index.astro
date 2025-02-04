@@ -2,13 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import macfivesix from "/public/macmocfivesix.png";
-import comet from "/public/comet.png";
 import linkedin from "/public/Linkedin.png";
 import github from "/public/github.png";
 import instagram from "/public/Instagram.png";
 import Arrow from "../components/Arrow.astro";
 import autosisa from "/public/auto-sisä.png";
-import autoetu from "/public/auto-etu.png";
 ---
 
 <Layout pageTitle="Laemkri">
@@ -21,9 +19,9 @@ import autoetu from "/public/auto-etu.png";
           </h1>
           <p class="my-4"></p>
           <p class="alaotsikko" data-aos="fade" data-aos-duration="13500">
-            Tervetuloa sivuilleni, täältä pääset tutustumaan materiaaleihin sekä
-            projekteihini. <br /> Nettisivulle päivittyy aina uusia projekteja kun
-            niitä tulee. <br /> Päivittelen sivuille myös keskeneräisiä projekteja.
+            Tervetuloa sivuilleni, täältä pääset tutustumaan projekteihini.
+            <br />
+            Päivittelen nettisivuja kun saan projekteja tehtyä.
           </p>
           <p class="mb-4"></p>
           <button
@@ -62,7 +60,7 @@ import autoetu from "/public/auto-etu.png";
       <div data-aos="fade" class="col-md-6">
         <h1>Blogi</h1>
         <p class="my-4"></p>
-        <p class="alaotsikko">Päivittelen blogiin tulevia projekteja.</p>
+        <p class="alaotsikko">Päivittelen blogiin tulevia sivuprojekteja.</p>
         <p class="mb-4"></p>
         <button onclick="document.location='/blogi'" class="btn">BLOGI</button>
       </div>
@@ -76,14 +74,17 @@ import autoetu from "/public/auto-etu.png";
       <div data-aos="fade" class="col-md-6 mb-4">
         <h1>Kokemus</h1>
         <p class="my-4"></p>
-        <p class="alaotsikko">
-          Voit tutustua kokemukseeni linkistä
-        </p>
+        <p class="alaotsikko">Voit tutustua kokemukseeni linkistä</p>
         <p class="mb-4"></p>
         <button onclick="document.location='/kokemus'">KOKEMUS</button>
       </div>
       <div data-aos="fade" class="col-md-6">
-        <Image src={macfivesix} width={600} alt="macbook" class="front-img-cover" />
+        <Image
+          src={macfivesix}
+          width={600}
+          alt="macbook"
+          class="front-img-cover"
+        />
       </div>
     </div>
     <p class="my-5"></p>
@@ -190,18 +191,28 @@ import autoetu from "/public/auto-etu.png";
   }
 
   .hero-image {
+    position: relative;
+    height: 900px;
+    background: none;
+  }
+
+  .hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.684),
         rgba(52, 0, 0, 0.575)
       ),
-      url("/public/taustaa.jpg");
-    height: 50%;
+      url("/public/3250.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
-    height: 900px;
-    object-fit: cover;
+    filter: blur(6px);
+    z-index: -1;
   }
 
   .hero {

@@ -1,27 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import Camaroulko from "../../public/Camaro 1-1-23.jpg";
-import Camarosisäyö from "../../public/Camaro 30-1-23.png";
-import Camarosisäpäivä from "../../public/Camaro 30-1-23(2).png";
-import peli97 from "/public/finngm.png";
 import katiskapuh from "/public/14pro.png";
 import katiskamac from "/public/katiskamac.png";
 import macfivesix from "/public/macmocfivesix.png";
 import puhfivesix from "/public/puhmocfivesix.png";
-import unitypeli from "/public/unitypeli.png";
-import bluebirdlogo from "/public/bluebird logo.png";
-import bluebirdinterior from "/public/bluebird sisusta.png";
-import pelitalot from "/public/pelitalot.png";
-import risteys from "/public/risteys.png";
-import blackbird from "/public/bluebird musta.png";
-import renkaat from "/public/ruosterenkaat.png";
 import projekti3 from "/public/Projekti 3-vuosi.png";
 import autosisa from "/public/auto-sisä.png";
 import autoetu from "/public/auto-etu.png";
 import autotaka from "/public/auto-taka.png";
 import autologo from "/public/auto-logo.png";
-
+import nokia3250 from "/public/3250.png";
+import nokia32501 from "/public/32501.png";
 ---
 
 <Layout pageTitle="Projektit | Laemkri">
@@ -31,6 +21,22 @@ import autologo from "/public/auto-logo.png";
       Projektit
     </h1>
     <hr class="otsikkohr" />
+
+    <div class="my-4"></div>
+    <h1 data-aos="fade">Nokia 3250 Xpressmusic</h1>
+    <hr class="keltanenhr" />
+    <p data-aos="fade">
+      Nokia 3250 Blender projekti
+    </p>
+    <hr class="keltanenhr" />
+    <div class="row">
+      <div data-aos="fade-right" class="col-lg-5 text-center">
+        <Image class="img-fluid rounded" height={450} src={nokia3250} alt="nokia" />
+      </div>
+      <div data-aos="fade-left" class="col-lg-5 text-center">
+        <Image class="img-fluid rounded" height={450} src={nokia32501} alt="nokia" />
+      </div>
+    </div>
 
     <div class="my-4"></div>
     <h1 data-aos="fade">Datsun 610 | 180B | 1976</h1>
@@ -55,7 +61,7 @@ import autologo from "/public/auto-logo.png";
     </div>
 
     <div class="my-4"></div>
-    <h1 data-aos="fade">Kolmannen vuoden projekti</h1>
+    <h1 data-aos="fade">Sovelluksen ulkoasun suunnittelu projekti</h1>
     <hr class="keltanenhr" />
     <p data-aos="fade">
       Tehtävänäni oli luoda monikäyttöisen sovelluksen ulkoasu Figman avulla, josta toteutettiin Android sovellus.
@@ -90,7 +96,7 @@ import autologo from "/public/auto-logo.png";
       <h1 data-aos="fade">Ravintola Katiskan sivut</h1>
       <hr class="keltanenhr" />
       <p data-aos="fade">
-        Uudistetut kotisivut ravintolalle. Käytetty: HTML, CSS, JS, ASTRO
+        Uudistetut kotisivut ravintolalle. Käytetty: HTML, CSS, JavaScript, Astro, Bootstrap
       </p>
       <hr class="keltanenhr" />
       <div class="row">
@@ -105,75 +111,6 @@ import autologo from "/public/auto-logo.png";
             alt="macbook"
           />
         </div>
-      </div>
-
-      <div class="my-5"></div>
-      <h1 data-aos="fade">Finngame 97 (Prototyyppi)</h1>
-      <hr class="keltanenhr" />
-      <p class="alaotsikko" data-aos="fade">
-        Suomalainen 1990-luvun teemainen peli. Käytetty: Unity, Blender, Adobe
-        InDesign, Adobe Photoshop
-      </p>
-      <hr class="keltanenhr" />
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={unitypeli} alt="Unitypeli" />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image
-          class="img-fluid rounded"
-          src={peli97}
-          width="400"
-          alt="juliste"
-        />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={blackbird} alt="sitirentti" />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image
-          class="img-fluid rounded"
-          src={bluebirdlogo}
-          width="400"
-          alt="juliste"
-        />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image
-          class="img-fluid rounded"
-          src={risteys}
-          alt="sitirentti"
-        />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={pelitalot} alt="taloja" />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={bluebirdinterior} alt="keskus" />
-      </div>
-
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={renkaat} alt="renkaita" />
-      </div>
-
-      <div class="my-5"></div>
-      <h1 data-aos="fade">Chevrolet Camaro SS 1967</h1>
-      <hr class="keltanenhr" />
-      <p class="alaotsikko" data-aos="fade">
-        Chevrolet 3D-mallinnus projekti. Käytetty: Blender
-      </p>
-      <hr class="keltanenhr" />
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={Camaroulko} alt="camarokuva" />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image class="img-fluid rounded" src={Camarosisäyö} alt="camarokuva" />
-      </div>
-      <div data-aos="fade" class="col-xxl-3 col-xl-4 col-md-6">
-        <Image
-          class="img-fluid rounded"
-          src={Camarosisäpäivä}
-          alt="camarokuva"
-        />
       </div>
     </div>
     <p class="my-5"></p>

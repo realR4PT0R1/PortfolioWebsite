@@ -11,6 +11,15 @@
   color: red;
 }
 
+.kielet {
+  background:
+  -webkit-linear-gradient(#d8d000, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
 .otsikkohr {
   background-color: #191919;
   text-align: center;
@@ -20,7 +29,6 @@
   width: 25%;
   margin: auto;
 }
-
 
 .front-img-cover {
   display: block;
@@ -140,7 +148,6 @@ Img {
 .keltanenhr2 {
   width: 300px;
   border-top: 3px solid #ff0080;
-
   margin: 0 42.4%;
 }
 

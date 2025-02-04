@@ -108,6 +108,15 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <h5>50</h5>
         </div>
+
+        <div class="line">
+          <p class="pyy">Python</p>
+          <div class="bar">
+            <div class="line_bar py"></div>
+          </div>
+          <h5>40</h5>
+        </div>
+
       </div>
     </div>
 
@@ -219,8 +228,19 @@ import Layout from "../layouts/Layout.astro";
 
     .line_content .line:nth-child(11) h5::after,
     .line_content .line:nth-child(11) h5 {
-      background: #ff3269;
+      background: #3932ff;
     }
+
+    .line_content .line:nth-child(12) h5::after,
+    .line_content .line:nth-child(12) h5 {
+      background: #ff32b7;
+    }
+
+    .line_content .line:nth-child(13) h5::after,
+    .line_content .line:nth-child(13) h5 {
+      background: #32ff3c;
+    }
+ 
 
     .line_content .bar {
       width: 100%;
@@ -285,6 +305,11 @@ import Layout from "../layouts/Layout.astro";
     .line_content .as {
       width: 50%;
       background: linear-gradient(to right, #202020 0%, #ff3269, #ff6200 100%);
+    }
+
+    .line_content .py {
+      width: 50%;
+      background: linear-gradient(to right, #202020 0%, #32ff3c 100%);
     }
 
     @keyframes bar {
@@ -352,6 +377,10 @@ import Layout from "../layouts/Layout.astro";
       background: -webkit-linear-gradient(#ff00d0, #ff6200);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .pyy {
+      color: #32ff3c;
     }
   </style>
 </Layout>
