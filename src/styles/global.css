@@ -12,8 +12,7 @@
 }
 
 .kielet {
-  background:
-  -webkit-linear-gradient(#d8d000, #ff0080);
+  background: -webkit-linear-gradient(#ff7300, #522583);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -24,7 +23,7 @@
   background-color: #191919;
   text-align: center;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(0.25turn, #d8d000, #ff0080);
+  border-image: linear-gradient(0.25turn, #ff7300, #522583);
   border-image-slice: 1;
   width: 25%;
   margin: auto;
@@ -47,8 +46,8 @@
 .gradient-title {
   font-family: SF;
   font-weight: 700;
-  background: #ff0080;
-  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background: #522583;
+  background: linear-gradient(to right, #ff7300 0%, #522583 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,11 +64,11 @@ a {
 }
 
 a:hover {
-  color: #d8d000;
+  color: #ff7300;
 }
 
 a:active {
-  color: #d8d000;
+  color: #ff7300;
 }
 
 p {
@@ -137,8 +136,8 @@ Img {
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(
     0.25turn,
-    #d8d000,
-    #ff0080,
+    #ff7300,
+    #522583,
     rgba(56, 2, 155, 0)
   );
   border-image-slice: 1;
@@ -147,7 +146,7 @@ Img {
 
 .keltanenhr2 {
   width: 300px;
-  border-top: 3px solid #ff0080;
+  border-top: 3px solid #522583;
   margin: 0 42.4%;
 }
 
@@ -155,8 +154,8 @@ Img {
   font-family: SF;
   font-weight: 100;
   font-size: 38px;
-  background: #ff0080;
-  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background: #522583;
+  background: linear-gradient(to right, #ff7300 0%, #522583 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -166,8 +165,8 @@ Img {
   font-family: SF;
   font-weight: 100;
   font-size: 30px;
-  background: #ff0080;
-  background: linear-gradient(to right, #d8d000 0%, #ff0080 100%);
+  background: #522583;
+  background: linear-gradient(to right, #ff7300 0%, #522583 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
